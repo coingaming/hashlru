@@ -36,9 +36,9 @@ the other LRU implementations on npm.
 
 ## example
 
-``` js
-var HLRU = require('hashlru')
-var lru = HLRU(100)
+```js
+const { createHLRU } = require('hashlru')
+const lru = createHLRU(100)
 lru.set(key, value)
 lru.get(key)
 ```
@@ -99,7 +99,3 @@ Empties the entire cache.
 ## License
 
 MIT
-
-
-
-
