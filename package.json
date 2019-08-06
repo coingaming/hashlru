@@ -31,8 +31,7 @@
     },
     "np": {
         "yarn": false,
-        "cleanup": false,
-        "contents": "dist"
+        "cleanup": false
     },
     "publishConfig": {
         "access": "public"
