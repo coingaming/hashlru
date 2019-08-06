@@ -1,6 +1,6 @@
 {
     "name": "@coingaming/hashlru",
-    "version": "2.3.0",
+    "version": "2.4.0",
     "description": "simpler faster substitute for LRU",
     "main": "dist/index.js",
     "private": true,
