@@ -3,6 +3,7 @@
     "version": "2.3.0",
     "description": "simpler faster substitute for LRU",
     "main": "dist/index.js",
+    "private": true,
     "scripts": {
         "test": "set -e; for t in test/*.js; do node $t; done",
         "cov": "istanbul cover test/*.js",
@@ -28,9 +29,6 @@
         "np": "5.0.3",
         "prettier": "1.18.2",
         "pretty-quick": "1.11.1"
-    },
-    "publishConfig": {
-        "access": "public"
     },
     "np": {
         "yarn": false,
