@@ -1,6 +1,6 @@
-var assert = require('assert')
-var HLRU = require('../')
-var lru = HLRU(2)
+const assert = require('assert')
+const HLRU = require('../src/index')
+const lru = HLRU.createHLRU(2)
 
 // set-get:
 lru.set('test', 'test')
@@ -33,7 +33,7 @@ assert.equal(lru.get('test2'), 'test2')
 assert.equal(lru.get('constructor'), undefined)
 
 // max validation:
-assert.throws(HLRU)
+assert.throws(HLRU.createHLRU)
 
 // remove:
 assert.equal(lru.has('test2'), true)
@@ -44,3 +44,5 @@ assert.equal(lru.has('test2'), false)
 assert.equal(lru.has('test'), true)
 lru.clear()
 assert.equal(lru.has('test'), false)
+
+console.log('All tests have successfully passed!')

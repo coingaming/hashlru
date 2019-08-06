@@ -1,21 +1,42 @@
 {
-  "name": "hashlru",
-  "description": "simpler faster substitute for LRU",
-  "version": "2.3.0",
-  "homepage": "https://github.com/dominictarr/hashlru",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/dominictarr/hashlru.git"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "istanbul": "^0.4.5"
-  },
-  "types": "index.d.ts",
-  "scripts": {
-    "test": "set -e; for t in test/*.js; do node $t; done",
-    "cov": "istanbul cover test/*.js"
-  },
-  "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (dominictarr.com)",
-  "license": "MIT"
+    "name": "@coingaming/hashlru",
+    "version": "2.3.0",
+    "description": "simpler faster substitute for LRU",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "set -e; for t in test/*.js; do node $t; done",
+        "cov": "istanbul cover test/*.js",
+        "pre-cm": "pretty-quick --staged"
+    },
+    "homepage": "https://github.com/coingaming/hashlru",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/coingaming/hashlru.git"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run pre-cm"
+        }
+    },
+    "devDependencies": {
+        "@babel/cli": "7.5.5",
+        "@babel/core": "7.5.5",
+        "@babel/preset-env": "7.5.5",
+        "husky": "3.0.2",
+        "istanbul": "0.4.5",
+        "np": "5.0.3",
+        "prettier": "1.18.2",
+        "pretty-quick": "1.11.1"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "np": {
+        "yarn": false,
+        "cleanup": false,
+        "contents": "dist"
+    },
+    "types": "index.d.ts",
+    "author": "",
+    "license": "MIT"
 }
