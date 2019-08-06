@@ -1,9 +1,8 @@
 {
-    "name": "@coingaming/hashlru",
+    "name": "@heathmont/hashlru",
     "version": "2.4.0",
     "description": "simpler faster substitute for LRU",
     "main": "dist/index.js",
-    "private": true,
     "scripts": {
         "test": "set -e; for t in test/*.js; do node $t; done",
         "cov": "istanbul cover test/*.js",
@@ -34,6 +33,9 @@
         "yarn": false,
         "cleanup": false,
         "contents": "dist"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "types": "index.d.ts",
     "author": "",
