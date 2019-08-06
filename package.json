@@ -6,7 +6,8 @@
     "scripts": {
         "test": "set -e; for t in test/*.js; do node $t; done",
         "cov": "istanbul cover test/*.js",
-        "pre-cm": "pretty-quick --staged"
+        "pre-cm": "pretty-quick --staged",
+        "release": "npx np"
     },
     "homepage": "https://github.com/coingaming/hashlru",
     "repository": {
